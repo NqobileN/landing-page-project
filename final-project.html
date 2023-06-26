@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .full-page {
+        box-shadow: rgba(129, 128, 128, 0.202) 0px 8px 8px 0;
+        background-image: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        border-radius: 20px;
+        width: 50%;
+        padding: 20px;
+        margin: 30px auto;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+      }
+
+      .project-img {
+        display: block;
+        margin: 0px auto;
+        border-radius: 10px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .h1 {
+        border: 1px solid white;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+
+      p {
+        line-height: 1.5;
+        font-family:'Courier New', Courier, monospace;
+      }
+
+      button {
+        padding: 15px 20px;
+        background-color: white;
+        border-radius: 10px;
+        color: navy;
+        font-size: larger;
+        font-weight: bold;
+        border: 0;
+      }
+
+      button:hover {
+        transition: 0.2s;
+        background: rgb(255, 226, 247);
+        cursor: pointer;
+      }
+
+      .button {
+        margin: 0px auto;
+        display: block;
+        text-align: center;
+      }
+    </style>
+
+    <title>Cybersecurity in Africa</title>
+  </head>
+
+  <div class="full-page">
+    <body>
+      <span>
+        <h1 class="h1">Cybersecurity</h1>
+
+        <h2>Cybersecurity in Africa</h2>
+        <hr />
+      </span>
+
+      <img
+        class="project-img"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/781/original/cybersec.jpg?1684757336"
+      />
+
+      <hr />
+      <div>
+        <p>
+          <a
+            href="https://www.techtarget.com/searchsecurity/definition/cybersecurity#:~:text=Cybersecurity%20is%20the%20protection%20of,centers%20and%20other%20computerized%20systems."
+            target="_blank"
+            ><strong>Cybersecurity</strong></a
+          >
+          - When one thinks of cybersecurity, images of hackers, phishing
+          attacks, online scammers, etc pop up. They would not be wrong as
+          cybersecurity works to mitigate such attacks on an individual.
+          However, have you ever thought of cybersecurity at state-level? How
+          does it work, and what effect does it have on said state?
+        </p>
+
+        <p>
+          Well, cybersecurity plays a crucial role at state-level, more in
+          particular, within politics. Within African states, cybersecurity
+          plays a crucial role at ensuring National Security, Election
+          Integrity, International Relations and Cyber Diplomacy, as well as the
+          mitigation of Information Warfare and Disinformation.
+        </p>
+
+        <p>
+          I know, I know, this may a bit of information and we may be getting
+          ahead of ourselves. However, if you want to read more on
+          <strong><em>Cybersecurity in Africa</em></strong>, click on the button
+          below.
+        </p>
+        <br>
+          <small><em>It's also okay if you don't. &#128516 </em></small>
+      
+      </div>
+
+      <div class="button">
+        <button>Read More</button>
+      </div>
+
+      <script>
+        function readNow() {
+          let name = prompt("What is your name?");
+          let answer = prompt("Hello! " + name + ", would you like to read more on Cybersecurity? (Y/N)");
+
+          if (answer == "Y") {
+            prompt("What is your email address?");
+            alert("Thank you, " + name + "! We will email you shortly.")
+          } else {
+            alert ("Thank you for visiting!");
+          }
+        }
+
+        let readMoreButton = document.querySelector("button");
+
+        readMoreButton.addEventListener("click", readNow);
+      </script>
+    </body>
+  </div>
+</html>
